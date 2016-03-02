@@ -6,12 +6,11 @@ require 'alexander_graham_bell/version'
 Gem::Specification.new do |spec|
   spec.name          = "alexander_graham_bell"
   spec.version       = AlexanderGrahamBell::VERSION
-  spec.authors       = ["Scott Speidel"]
-  spec.email         = ["scottspeidel@gmail.com"]
+  spec.authors       = ["Scott Speidel","Michael Jewell"]
+  spec.email         = ["scottspeidel@gmail.com", "michaeljewell9911@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Phone number parser and tel link creator.}
+  spec.homepage      = "https://github.com/appfolio/alexander-graham-bell"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -26,8 +25,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
-  spec.add_runtime_dependency "phone", "1.3.0.beta1"
 
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"

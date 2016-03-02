@@ -29,14 +29,14 @@ class AlexanderGrahamBellTest < Minitest::Test
     assert_equal '      ', AlexanderGrahamBell.tel_link('      ')
   end
 
-  def test_tel_link__raises_a_type_error
+  def test_tel_link__raises_a_type_error_given_a_fixnum
     err = assert_raises(TypeError) {
       AlexanderGrahamBell.tel_link(8051234567)
     }
     assert_equal 'Expected phone_number to be of type String but got Fixnum', err.message
   end
 
-  def test_tel_link__raises_a_type_error
+  def test_tel_link__raises_a_type_error_given_nil
     err = assert_raises(TypeError) {
       AlexanderGrahamBell.tel_link(nil)
     }
