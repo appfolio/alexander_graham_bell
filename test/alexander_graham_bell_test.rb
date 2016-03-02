@@ -27,6 +27,8 @@ class AlexanderGrahamBellTest < Minitest::Test
     assert_equal 'wal@do.com', AlexanderGrahamBell.tel_link('wal@do.com')
     assert_equal '', AlexanderGrahamBell.tel_link('')
     assert_equal '      ', AlexanderGrahamBell.tel_link('      ')
+    assert_equal '&lt;a href=&quot;/sup/bro&quot;&gt;hi&lt;/a&gt;', AlexanderGrahamBell.tel_link('<a href="/sup/bro">hi</a>')
+    assert_equal '<a href="/sup/bro">hi</a>', AlexanderGrahamBell.tel_link('<a href="/sup/bro">hi</a>', nil)
   end
 
   def test_tel_link__raises_a_type_error_given_a_fixnum
