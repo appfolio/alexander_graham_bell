@@ -26,7 +26,7 @@ puts AlexanderGrahamBell.tel_link('+18052234567ext5')
 ```
 ###rails
 ```ruby
-# If you're using rails and you want to html escape everything wrap it in your own module or class.
+# If you're using rails and you want to html escape everything, wrap it in your own module or class.
 
 module MyLinkGenerator
   def self.build(phone_number)
