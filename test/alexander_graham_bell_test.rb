@@ -19,6 +19,10 @@ class AlexanderGrahamBellTest < Minitest::Test
     assert_equal "<a href=\"tel:+18052234567;isub=5\">+18052234567   x 5</a>", AlexanderGrahamBell.tel_link('+18052234567   x 5')
     assert_equal "<a href=\"tel:+18052234567;isub=5\">+18052234567 , 5</a>", AlexanderGrahamBell.tel_link('+18052234567 , 5')
     assert_equal "<a href=\"tel:+18052234567;isub=5\">+18052234567 EXT  : 5</a>", AlexanderGrahamBell.tel_link('+18052234567 EXT  : 5')
+
+
+
+    assert_equal "", AlexanderGrahamBell.tel_link('')
   end
 
   def test_tel_link__creates_text_for_invalid_links
