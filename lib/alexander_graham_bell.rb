@@ -4,11 +4,11 @@ require 'alexander_graham_bell/phone'
 
 module AlexanderGrahamBell
   class << self
-    def tel_link(phone_number, escaper = ERB::Util.method(:h))
+    def tel_link(phone_number)
       phone = Phone.new(phone_number)
-      escaped_phone_number = escape_phone_number(phone_number, escaper)
+      escaped_phone_number = escape_phone_number(phone_number)
       return escaped_phone_number unless phone.valid?
-      "<a href=\"tel:#{phone.number}#{isub(phone)}\">#{escaped_phone_number}</a>"
+      "<a href=\"#{tel_href(phone_number)}\">#{escaped_phone_number}</a>"
     end
 
     def tel_href(phone_number)
@@ -20,8 +20,8 @@ module AlexanderGrahamBell
 
     private
 
-    def escape_phone_number(phone_number, escaper = ERB::Util.method(:h))
-      escaper ? escaper.call(phone_number) : phone_number
+    def escape_phone_number(phone_number)
+      ERB::Util.h(phone_number)
     end
 
     def isub(phone)
