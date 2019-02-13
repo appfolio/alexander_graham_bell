@@ -31,11 +31,11 @@ class AlexanderGrahamBellTest < Minitest::Test
     assert_equal '&lt;a href=&quot;/sup/bro&quot;&gt;hi&lt;/a&gt;', AlexanderGrahamBell.tel_link('<a href="/sup/bro">hi</a>')
   end
 
-  def test_tel_link__raises_a_type_error_given_a_fixnum
+  def test_tel_link__raises_a_type_error_given_an_integer
     err = assert_raises(TypeError) {
       AlexanderGrahamBell.tel_link(8051234567)
     }
-    assert_equal 'Expected phone_number to be of type String but got Fixnum', err.message
+    assert_equal 'Expected phone_number to be of type String but got Integer', err.message
   end
 
   def test_tel_link__raises_a_type_error_given_nil
@@ -51,5 +51,4 @@ class AlexanderGrahamBellTest < Minitest::Test
     assert_equal 'tel:bald duck', AlexanderGrahamBell.tel_href('bald duck')
     assert_equal 'tel:', AlexanderGrahamBell.tel_href('')
   end
-  
 end
