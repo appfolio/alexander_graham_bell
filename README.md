@@ -13,7 +13,7 @@ gem install alexander_graham_bell
 
 ## Requirements
 
-* Ruby 2.2.3 or higher
+* Ruby 2.5.3 or higher
 
 ## Examples
 #### Generate a tel link
