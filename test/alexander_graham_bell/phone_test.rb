@@ -13,17 +13,17 @@ module AlexanderGrahamBell
       assert_equal '805', p.area_code
       assert_equal '234', p.telephone_exchange
       assert_equal '5678', p.line_number
-      assert_equal nil, p.extension
+      assert_nil p.extension
     end
 
     def test_international
       assert_equal '+1', Phone.new('+18052345678').international
       assert_equal '+1', Phone.new('+1 8052345678').international
       assert_equal '1', Phone.new('18052345678').international
-      assert_equal nil, Phone.new('8052345678').international
-      assert_equal nil, Phone.new('+28052345678').international
-      assert_equal nil, Phone.new('28052345678').international
-      assert_equal nil, Phone.new('523-5678').international
+      assert_nil Phone.new('8052345678').international
+      assert_nil Phone.new('+28052345678').international
+      assert_nil Phone.new('28052345678').international
+      assert_nil Phone.new('523-5678').international
     end
 
     def test_area_code
@@ -31,23 +31,23 @@ module AlexanderGrahamBell
       assert_equal '831', Phone.new('18312345678').area_code
       assert_equal '444', Phone.new('1-444-2345678').area_code
       assert_equal '444', Phone.new('+14442345678').area_code
-      assert_equal nil, Phone.new('28052345678').area_code
-      assert_equal nil, Phone.new('0002223333').area_code
-      assert_equal nil, Phone.new('11223334444').area_code
-      assert_equal nil, Phone.new('523-5678').area_code
+      assert_nil Phone.new('28052345678').area_code
+      assert_nil Phone.new('0002223333').area_code
+      assert_nil Phone.new('11223334444').area_code
+      assert_nil Phone.new('523-5678').area_code
     end
 
     def test_telephone_exchange
       assert_equal '234', Phone.new('+1805-234-5678').telephone_exchange
       assert_equal '234', Phone.new('234-5678').telephone_exchange
-      assert_equal nil, Phone.new('+1805-134-5678').telephone_exchange
+      assert_nil Phone.new('+1805-134-5678').telephone_exchange
     end
 
     def test_line_number
       assert_equal '5678', Phone.new('+1805-234-5678').line_number
       assert_equal '5678', Phone.new('234-5678').line_number
       # invalid area code means everything is nil
-      assert_equal nil, Phone.new('+1005-234-5678').line_number
+      assert_nil Phone.new('+1005-234-5678').line_number
     end
 
     def test_extension
@@ -66,9 +66,9 @@ module AlexanderGrahamBell
       assert_equal '67', Phone.new('831-555-1234, extension. 67').extension
       assert_equal '67', Phone.new('831-555-1234, extension:67').extension
       assert_equal '2', Phone.new('555-1234,. 2').extension
-      assert_equal nil, Phone.new('831-555-1234').extension
-      assert_equal nil, Phone.new('555-1234').extension
-      assert_equal nil, Phone.new('1800-976-4533').extension
+      assert_nil Phone.new('831-555-1234').extension
+      assert_nil Phone.new('555-1234').extension
+      assert_nil Phone.new('1800-976-4533').extension
     end
 
     def test_valid__valid_numbers

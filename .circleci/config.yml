@@ -1,0 +1,21 @@
+version: 2.1
+commands:
+  bundle_install_and_test:
+    steps:
+      - checkout
+      - run: bundle install
+      - run: bundle exec appraisal install
+      - run: bundle exec appraisal rake test
+
+jobs:
+  test-ruby-253:
+    steps:
+    - bundle_install_and_test
+    docker:
+    - image: circleci/ruby:2.5.3
+
+workflows:
+  rc:
+    jobs:
+      - test-ruby-253:
+          context: appfolio_test_context
