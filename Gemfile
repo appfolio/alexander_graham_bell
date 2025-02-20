@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
+ruby '3.2.5'
+
 # Specify your gem's dependencies in alexander_graham_bell.gemspec
 gemspec
 
-source "https://gemini.atl.appfolio.net" do
-  gem 'af_gems', '~> 6.0'
-  gem 'af_testing', '~> 5.5'
+source 'https://rubygems.pkg.github.com/appfolio' do
+  gem 'af_gems'
+  gem 'af_testing'
 end

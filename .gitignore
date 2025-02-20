@@ -1,9 +1,13 @@
 /.bundle/
-/.yardoc
-/Gemfile.lock
-/_yardoc/
 /coverage/
-/doc/
 /pkg/
-/spec/reports/
 /tmp/
+/some_test_dir/
+
+# Only generate Appraisal gemfiles on CI
+/gemfiles/
+
+# Ignore generated files
+Gemfile.lock
+*.log
+*.gem
