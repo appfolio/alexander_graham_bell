@@ -10,16 +10,13 @@ rescue Bundler::BundlerError => e
   exit e.status_code
 end
 
-require 'af_gems'
+require 'rake/testtask'
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << "test"
-  t.libs << "lib"
-  t.test_files = FileList['test/**/*_test.rb']
+Rake::TestTask.new(:test) do |test|
+  test.libs << 'test'
+  test.pattern = 'test/**/*_test.rb'
+  test.verbose = true
+  test.warning = false
 end
 
-namespace :test do
-  AfGems::RubyAppraisalTask.new(:all, ['ruby-3.2.5'])
-end
-
-task :default => :test
+task default: :test

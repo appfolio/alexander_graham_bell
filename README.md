@@ -10,12 +10,12 @@ Phone number parser and tel link creator.
 gem install alexander_graham_bell
 ```
 
-
 ## Requirements
 
 * Ruby 2.5.3 or higher
 
 ## Examples
+
 #### Generate a tel link
 ```ruby
 puts AlexanderGrahamBell.tel_link('1-800-555-1234')

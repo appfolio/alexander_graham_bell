@@ -1,24 +1,20 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'alexander_graham_bell/version'
+# frozen_string_literal: true
+
+require_relative 'lib/alexander_graham_bell/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "alexander_graham_bell"
+  spec.name          = 'alexander_graham_bell'
   spec.version       = AlexanderGrahamBell::VERSION
-  spec.authors       = ["Scott Speidel","Michael Jewell"]
-  spec.email         = ["scottspeidel@gmail.com", "michaeljewell9911@gmail.com"]
+  spec.platform      = Gem::Platform::RUBY
+  spec.author        = 'AppFolio'
+  spec.email         = 'opensource@appfolio.com'
+  spec.description   = 'Phone number parser and tel link creator.'
+  spec.summary       = spec.description
+  spec.homepage      = 'https://github.com/appfolio/alexander_graham_bell'
+  spec.license       = 'MIT'
+  spec.files         = Dir['**/*'].select { |f| f[%r{^(lib/|LICENSE.txt|.*gemspec)}] }
+  spec.require_paths = ['lib']
 
-  spec.summary       = "Phone number parser and tel link creator."
-  spec.homepage      = "https://github.com/appfolio/alexander-graham-bell"
-  spec.license       = "MIT"
-
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
-
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "minitest"
+  spec.required_ruby_version = Gem::Requirement.new('< 3.5')
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 end

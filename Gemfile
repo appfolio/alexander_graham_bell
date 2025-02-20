@@ -1,11 +1,15 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-ruby '3.2.5'
+source 'https://rubygems.org' # global source
 
-# Specify your gem's dependencies in alexander_graham_bell.gemspec
-gemspec
-
-source 'https://rubygems.pkg.github.com/appfolio' do
-  gem 'af_gems'
-  gem 'af_testing'
+source 'https://rubygems.org' do
+  gem 'appraisal', '>= 2.5', '< 3'
+  gem 'bundler', '>= 2.2', '< 3'
+  gem 'minitest', '>= 5.22', '< 6'
+  gem 'minitest-reporters', '>= 1.6', '< 2'
+  gem 'mocha', '>= 2.1', '< 3'
+  gem 'rake', '>= 13', '< 14'
+  gem 'simplecov', '>= 0.22', '< 1', group: :test, require: false
 end
+
+gemspec
