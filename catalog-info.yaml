@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  title: alexander_graham_bell
+  description: Phone number parser and tel link creator.
+  tags: []
+  annotations:
+    appfolio.com/package-location: https://rubygems.org/gems/alexander_graham_bell
+    appfolio.com/package-type: gem
+    circleci.com/project-slug: github/appfolio/alexander_graham_bell
+  name: alexander-graham-bell
+spec:
+  type: library
+  lifecycle: maintenance
+  owner: engineering
