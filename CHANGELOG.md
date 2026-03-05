@@ -2,10 +2,12 @@
 
 ## [Unreleased](https://github.com/appfolio/alexander_graham_bell/tree/HEAD)
 
-[Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/792b4eaf3bb63f7a0bdb4ea99413201085040f25...HEAD)
+[Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/v0.3.0...HEAD)
 
 **Merged pull requests:**
 
+- Configure NPM and Yarn to use custom NPM package repository [\#9](https://github.com/appfolio/alexander_graham_bell/pull/9) ([appfolio-sourcegraph-batch-changes[bot]](https://github.com/apps/appfolio-sourcegraph-batch-changes))
+- \[KNOW-154\]: Use CODEOWNERS to determine Developer Portal catalog ownership [\#8](https://github.com/appfolio/alexander_graham_bell/pull/8) ([modethirteen](https://github.com/modethirteen))
 - Update gem to appraise Ruby 3.2.5, 3.3.6, 3.4.1 [\#7](https://github.com/appfolio/alexander_graham_bell/pull/7) ([tristil](https://github.com/tristil))
 - Ruby 2.6.3 [\#6](https://github.com/appfolio/alexander_graham_bell/pull/6) ([wpliao1989](https://github.com/wpliao1989))
 - Update README due to Ruby Upgrade [\#5](https://github.com/appfolio/alexander_graham_bell/pull/5) ([ztmeyer](https://github.com/ztmeyer))
@@ -13,6 +15,10 @@
 - ss - href output, bundler version for circle ci, guard [\#3](https://github.com/appfolio/alexander_graham_bell/pull/3) ([scottspeidel](https://github.com/scottspeidel))
 - Html safe [\#2](https://github.com/appfolio/alexander_graham_bell/pull/2) ([scottspeidel](https://github.com/scottspeidel))
 - ss/mj - add phone object and static helper methods [\#1](https://github.com/appfolio/alexander_graham_bell/pull/1) ([scottspeidel](https://github.com/scottspeidel))
+
+## [v0.3.0](https://github.com/appfolio/alexander_graham_bell/tree/v0.3.0) (2026-03-05)
+
+[Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/792b4eaf3bb63f7a0bdb4ea99413201085040f25...v0.3.0)
 
 
 
