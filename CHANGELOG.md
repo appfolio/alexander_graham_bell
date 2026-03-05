@@ -2,7 +2,19 @@
 
 ## [Unreleased](https://github.com/appfolio/alexander_graham_bell/tree/HEAD)
 
-[Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/v0.3.0...HEAD)
+[Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/v0.4.0...HEAD)
+
+**Merged pull requests:**
+
+- \[BANK-1738\] Update supported Ruby versions to 3.3.10, 3.4.8, 4.0.1 [\#10](https://github.com/appfolio/alexander_graham_bell/pull/10) ([Maimer](https://github.com/Maimer))
+
+## [v0.4.0](https://github.com/appfolio/alexander_graham_bell/tree/v0.4.0) (2026-03-05)
+
+[Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/v0.3.0...v0.4.0)
+
+## [v0.3.0](https://github.com/appfolio/alexander_graham_bell/tree/v0.3.0) (2026-03-05)
+
+[Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/792b4eaf3bb63f7a0bdb4ea99413201085040f25...v0.3.0)
 
 **Merged pull requests:**
 
@@ -15,10 +27,6 @@
 - ss - href output, bundler version for circle ci, guard [\#3](https://github.com/appfolio/alexander_graham_bell/pull/3) ([scottspeidel](https://github.com/scottspeidel))
 - Html safe [\#2](https://github.com/appfolio/alexander_graham_bell/pull/2) ([scottspeidel](https://github.com/scottspeidel))
 - ss/mj - add phone object and static helper methods [\#1](https://github.com/appfolio/alexander_graham_bell/pull/1) ([scottspeidel](https://github.com/scottspeidel))
-
-## [v0.3.0](https://github.com/appfolio/alexander_graham_bell/tree/v0.3.0) (2026-03-05)
-
-[Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/792b4eaf3bb63f7a0bdb4ea99413201085040f25...v0.3.0)
 
 
 
