@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.4.1](https://github.com/appfolio/alexander_graham_bell/compare/v0.4.0...v0.4.1) (2026-04-27)
+
+
+### Documentation
+
+* update changelog ([66f369f](https://github.com/appfolio/alexander_graham_bell/commit/66f369f7a625959fab1b5e6aac20d3b3e4bca131))
+
+
+### Continuous Integration
+
+* add Release Please and gem-releaser workflows for automated releases ([82e61b2](https://github.com/appfolio/alexander_graham_bell/commit/82e61b2b30680432c670a087821991ab52216a7a))
+* add Release Please and gem-releaser workflows for automated releases ([d110571](https://github.com/appfolio/alexander_graham_bell/commit/d11057181d66dd0ccb05f417903b8dba73a302df))
+
 ## [Unreleased](https://github.com/appfolio/alexander_graham_bell/tree/HEAD)
 
 [Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/v0.4.0...HEAD)
