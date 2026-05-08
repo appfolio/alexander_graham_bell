@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - master
+    paths:
+      - 'lib/**'
+      - 'alexander_graham_bell.gemspec'
+      - 'LICENSE.txt'
 
 permissions:
   contents: write
