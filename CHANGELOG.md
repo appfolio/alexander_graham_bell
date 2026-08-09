@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.4.1](https://github.com/appfolio/alexander_graham_bell/compare/v0.4.0...v0.4.1) (2026-05-07)
+
+
+### Documentation
+
+* update changelog ([66f369f](https://github.com/appfolio/alexander_graham_bell/commit/66f369f7a625959fab1b5e6aac20d3b3e4bca131))
+
+
+### Miscellaneous Chores
+
+* migrate npm registry from CodeArtifact to JFrog ([e5302fc](https://github.com/appfolio/alexander_graham_bell/commit/e5302fc83352bfda345bddd371d34e44b238b19c))
+* migrate npm registry from CodeArtifact to JFrog ([45e69e1](https://github.com/appfolio/alexander_graham_bell/commit/45e69e19facb4b6e050e7946dde774e462f4a78a))
+
+
+### Continuous Integration
+
+* add Release Please and gem-releaser workflows for automated releases ([82e61b2](https://github.com/appfolio/alexander_graham_bell/commit/82e61b2b30680432c670a087821991ab52216a7a))
+* add Release Please and gem-releaser workflows for automated releases ([d110571](https://github.com/appfolio/alexander_graham_bell/commit/d11057181d66dd0ccb05f417903b8dba73a302df))
+
 ## [Unreleased](https://github.com/appfolio/alexander_graham_bell/tree/HEAD)
 
 [Full Changelog](https://github.com/appfolio/alexander_graham_bell/compare/v0.4.0...HEAD)
